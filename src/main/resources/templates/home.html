@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<button>Add book</button>
-<button>Show books</button>
-<button>Show users</button>
+<a th:href = "@{addBook}"><button>Add book</button></a>
+<a th:href = "@{books}"><button>Show books</button></a>
+<a th:href = "@{users}"><button>Show users</button></a>
 </body>
 </html>
