@@ -7,9 +7,18 @@
     <title>Title</title>
 </head>
 <body>
-<div>
-    <div>Provide a name ...</div>
-    <div>Provide a description ...</div>
-</div>
+<form method="POST" th:action="@{/addBook}" id="book">
+    <label for="name">Provide a name</label>
+    <input type="text" name="name"/><br/>
+
+    <label for="description">Provide a description</label>
+    <input type="text" name="description"/><br/>
+
+    <input type="submit" value="click here to add new book">
+</form>
+---------<br/>
+<a th:href = "@{addBook}"><button>Add book</button></a>
+<a th:href = "@{users}"><button>Show users</button></a>
+<a th:href = "@{home}"><button>Homepage</button></a>
 </body>
 </html>

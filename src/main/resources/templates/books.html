@@ -13,9 +13,11 @@
             <a th:text="${book.name}"></a>:::
             <a th:text="${book.description}"></a>
         </div>
-        <button>Sign in</button>
     </div>
 </div>
-...
+---------<br/>
+<a th:href = "@{addBook}"><button>Add book</button></a>
+<a th:href = "@{users}"><button>Show users</button></a>
+<a th:href = "@{home}"><button>Homepage</button></a>
 </body>
 </html>

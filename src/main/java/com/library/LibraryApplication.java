@@ -24,8 +24,8 @@ public class LibraryApplication {
 				bookRepo.save(new Book(1,"Nice book", "This is a really nice book!"));
 				bookRepo.save(new Book(2, "Some fancy stuff", "This book contains description of some fancy items"));
 				bookRepo.save(new Book(3, "Prohibited book", "Please do not read this book"));
-				userRepo.save(new ModelUser(1L, "majadmin", "mocnehaslo"));
-				userRepo.save(new ModelUser(2L, "majuser", "slabehaslo"));
+				//userRepo.save(new ModelUser(1L, "majadmin", "mocnehaslo"));
+				//userRepo.save(new ModelUser(2L, "majuser", "slabehaslo"));
 			}
 		};
 	}
